@@ -1,0 +1,43 @@
+---
+
+- name: Install sudo package
+  package:
+    name: sudo
+    state: present
+
+- name: Setup sudoers.d
+  lineinfile:
+    dest: /etc/sudoers
+    line: "#includedir /etc/sudoers.d"
+    regexp: "^#includedir /etc/sudoers.d"
+    validate: "visudo -cf %s"
+    state: present
+
+- name: collect uids
+  command: "awk -F : '{print $3}' /etc/passwd"
+  register: uids
+  changed_when: false
+
+- name: collect gids
+  command: "awk -F : '{print $3}' /etc/group"
+  register: gids
+  changed_when: false
+
+- name: collect groups
+  command: "awk -F : '{print $1}' /etc/group"
+  register: group_names
+  changed_when: false
+
+- name: exclude users
+  set_fact:
+    sfup_users: "{{ sfup_users |rejectattr('name', 'in', exclude ) }}"
+
+- name: setup users
+  include_tasks: present_user.yml
+  when: (item.state | default('present')) == 'present'
+  with_items: "{{ sfup_users + additional_users }}"
+
+- name: remove users
+  include_tasks: absent_user.yml
+  when: (item.state | default('present')) == 'absent'
+  with_items: "{{ sfup_users + additional_users }}"

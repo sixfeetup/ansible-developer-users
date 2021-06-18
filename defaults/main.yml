@@ -1,0 +1,76 @@
+---
+additional_users: []
+
+shell: /usr/bin/zsh
+sudo_config: ALL=(ALL) NOPASSWD:ALL
+optional_groups:
+  - zope
+  - django
+  - karl
+  - root
+  - wheel
+  - sudo
+
+exclude: []
+
+sfup_users:
+  - name: annette
+    fullname: Annette Lewis
+    id: 13300
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAEAQDwshdVjM/tqkRORjiNNyh8jKL+RAguCC+SVgLIhQ8zH9WgljYxgQ2V/YeFcexZHVNoeBRhS2SFGXhHwCeLVZFYiyJ0eBq6nFkaI3wmRLM6GdiL0pCE22TkE3YeUmFkCavrsO1vNybnqD4veOsw+9X54fvBjKby7WRf8JMvDRBZ3n0NJgBtyFjPQA5azLPw1pGLXUN0YjpKN037SrfKVzmtuBSEDVrZEcZt6nLId/QPyrqyjm+aQE+8ILTG52fiuLBWPx4i+TZBfqexvpQDHd64nTJ1pkao+HfbHVHIO2e+noe3EfdP/BOYY+UB4dmjsWgiVBtMF9cSDmNOJ+qCSXH+oreqAIFKPyUcZ8QYv33SAw9VByH2tY6gC8zAcxgqNQP8m7WoI1DsvnHOeYDPNpmW1fuUykEmBcPE7aD1Tc8Wa0qOl1Il/eSQ2hOO4Mqs57MPilD+NNzpogFvEMpimWqD/2lDy9wySNheXX6cYaTEcW14AVHOj0sKWStB125jUnfddsV1XJysoVnOXyme1VDJTUlZKJfT3WY9qsDxnU/LNCZpwHYpTfZkoJfsTWNjSw2C8HPGZYK6Dar7ZCk9Crpjzvzi3tI0wczLRPIDJ5utjMy9LR2yfBXFl5Ztqj6IXU7lkH9YKIPik98wjw43jPWJ796TqQDrv8Lf8jRH/f8kJi/qcq6IidSlC2rGNSmcoG/a0OMHL8UYxt1O5W1B8Pjaz5ijalKAJOlaczO8lcGRKZCqKZnvPWnsEawUNXUXBjSnLRHQewKqPI3nt5i2edpxNAscBe0HZ3LSRPpPNo/ngseIWKbHdhIRngprBtvCQOAjAl/iKnjpGv6SEf7gdn2M6H4SQKLQaO4IJWOfUiiKXNU2lPBYhp112LMJICNXOYspMRnKmgR5qf79R00xOYvK0+NIt4T4Zf6ZAz+u5189Pq5g3JErC//ncpC6DC2Py/qbyNn6/WYJ60ZQ2ObGtzbE02zYH+yR3Wu8TbWq429sI7nkBBFYtIqSzaCZ4v9iZ2Kmnk+jmUVjbcH+C1Cu1Os981PDAqySP9XjAmvKAVY+4Om45iDgcYpYrzxmm2urtuWYXSS/dfmyQFlDbWz4yx6ZeoOOqcdQPC2yuEXj7n2gvsRmoJMcnQeFYn0FVNsHO8mK0rbd4Fg7ZR32p8XRcfE8VHw9yGObq/MUTLK3ozw9Pi4+E9cWr+s5FtzD2HuYrwViRaNpO8YJ1FUPJga0YcFxA5fnC6tg2A5PWWwaUmmLtfDt1k3lL6EjBPNjvBY9GY+4gbm/L6VAmhhBMevsha1mlM4MtJTHJeyDM6vSvWuJH7OA700+JlEBwK4g4k//HbA5pmEauENHVNLVpoJXkwI3 alewis@As-MacBook-Pro.local
+  - name: abosio
+    fullname: Anthony Bosio
+    id: 12553
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGNmhCowKm+cd3ALWHfFxTO5uiFG01xDbEn7ym8p6uat2aqYjG67T3LxCgpOcidUnZftanIFkDmWMA07bTFin4eowQFpaXgxIhnrI9n9T2MKemriP3Dbqc/tSE+9Eiw25P+B3xNSWNx3LRqzhsSoA2fFh+FX0k+fnBxQ5eA8kt4NDYZ/6DTdMcu3HQJUlgNkDyrW5Ce3UxoNTH0luBQwTdOoQWELM54nI6SGrmNVoxVg6vH5TDVuHAfCXLY7ugc39WpgUB3bEd8m3R9X5xIcHWYCnuKt1JP+WmhwtEFeqoEMiN5lWa0ICjQaz3dkHsJ3wlkHQBNT2wtdQRd3dVxfQJ anthony@abosio.com
+  - name: caleb
+    fullname: Caleb Gosnell
+    id: 13174
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCy1CDRSzg9DEVZQ5fze52rjl6HjeiXFUQogKVR838mCrojPeHIeM/HYZ2ten7zFZ9vpwLA3hBf+z92FwN6lM4jEEz4VU15QDRFcLtEnsstOfp10sR0Kbnc7PhV79IlyYkRtHBDlW7unGbflIrFAA6PzQklFGJrGH/9unRcRkFLlOPd4MCiU3kORK+yDrDmDn+aT9ajHTY6XvjiYqWF3ThzXuvo1nRccb3SBvCddmi2MKoMPPq5Z6dJqDJkdWy9UXcT3QlsXE6XUL2GuL6oZ/e10mAad74VvtUAII7p7tHSLhZbrp+92MXq2dYC/wJapJZdXbEpycgcq2BmeKdKaqkF calebgosnell@Calebs-MacBook-Pro.local
+  - name: calvin
+    fullname: Calvin Hendryx Parker
+    id: 10000
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCqCDE0jV2NrUQZ83HPDcirX9iMbRgkyOmD05IUlK0VS9Q4SQcg5Uhs6jVeFNcKgAW82773caBbNDFUVfKiTOSjTcz5iLcVkyDz8wBK/e8f3lBWmRcuQd1VHvB3NPFoNEYI5QqVmW9r/K1fTPPH/13Gs98A8Wutt1Bvr25GLVkfHwhApPtdTfwx37Am1rCBfIDecyo74NX/NGvOrajxk4JPLKNeeCXlcFq/kPt20y6Nm41J0PBt84RfXi6p/Qgq9eNzF/7XPYBfia7kVobwTAW1wZ+vijU7KTyGeA6oLmy7cjOwdr3vMdK3s90QtYJOR0hCLqF8Ez/dMUWttgsfgSmP calvin@sixfeetup.com
+  - name: chrissy
+    fullname: Chrissy Wainwright
+    id: 11389
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7d0RKCsXzm8IkKYZ4WPp1a9c3POGwP32ufq50jP//nZVtWqNZFpubxa740nCjGLErUoesJnQYZ5qYJVWHh9Q4Zob4Jav4dIaZ/5V/e6AP/SjfyC3fzHtiVLuBGvB/e2My/IMzP4TwOPkri7n+HaJqFk+oaLn4vYlqGt22BI5qBcI12Xgm/s1VMJJoOUhaXI1O44maoRcTEUAKzauR38nZLByp9adPSdOGl2kwdd7On2pesDqnD3oORP869hzVtxFNtEFNko7Wz8kYOSHZrdo73lZDjSHC5IqP8i5ZzAUEFOMRVZNvJJdePWApgcC180lBTZiiKy1qEkXfMwvaTSah chrissy@sixfeetup.com
+  - name: christine
+    fullname: Christine Shaw
+    id: 11403
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAgEA5AAf0uIauqLq/KM1IGmLooy9GUrjbpzogqal8P/UaoxBOujfN+6YODU7bfvGJ4hvmg54Gh8f2zPL9i4kMvDFpJKf4906DA/J7C1qd4LsCut/u6jhnZvF1RR19cM9pKqJGK21ZAQMSdwBze43n1KiYFk7923HiFaboFjPzfiWQyxkC0q1iB+XsOF0Z3k0kvFV7QxEQ2DHM3gOGJbOm9RBZA0Es/4AuRBbyrVxw8CPXW+2I0Jg53WIkQMA/40ekCf223Z0tM4vSGPbr3aEFkloZNq3E+0kvHtd3FyYThQ01xh4NCeXGhfTNNeTksfCCvkLOxYrerQfmch+Pn5+xbNdTV8NXMM6kKO6W/KZvwyCB4Bkkh876NyM0XuxIUEpRAsUm+y5duy0Ckj9tvNNQU7+rJ9DnIO/H1UJX7DRK9cdnvv+yQBtc8APG8Y9hqGSFvldmnkYBNXkNVwo4kLJ1kskO6oXIYqr5hAXX8DH+s3RmTNbDWAnnji0BGfTvFpBRExh0orBYjpT8Z6TTQmVW3u38CiTLbVlI3h/ed9/i3NAM+RqKraxTS4c+NVCiHeA7fs0ASAPG6vg9gMHXjNNOAEivC23LICXRqHsN/04DDXXt2t5ul0XG3xEDWx+X/U10kF/lpXL+fGQdMqJrdrSTbLEy+1OTYpZu0ctGVTABH3HNGU= christine@chris-SONY
+  - name: glenn
+    fullname: Glenn Franxman
+    id: 12659
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNGq4JqpCFW98ybZmJlArHfKx54pb2JXlxVTBUk5a4Z9UXDns6yIcsREqCnwwtlrUg5+6n347sHDN2tfwUX20ruO+OTapFpx/0yRzDDH8MHXvUEtpwgajIxfdOBqSQIcldGhNMw1d2QbWGlRuJWemzxP0z2B90kJisup/Eu7sTgOti3xOPH+NjWQNtkS7djm9SmYNXlYTZuCvN8ZdsZgNA2/7CEtcCf5DNseZCJnCd3llptj2E2s3BtCxku5U22CwjMVT6S+U5HKrIgYEDOL5fBwOxUSUh65Z1hcbUqC041qwzrtvXBLqIZzO+ssxpHZl0pdKaW1ckDSvsbzZuydK9 gfranxman@Glenns-MacBook-Pro.local
+  - name: kim
+    fullname: Kim Nguyen
+    id: 12570
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCZv7tmokQijTEC2guA9YkYQb+BO9pUrMsIgDPkfhioO5HrGEhJmf8YKuXnFqZePpBSdUeKkamSJU5h1b7nZB1dTeR9Pi3zHdq5OFdw3sFLu7XtIqRyLq5m7nw+AboycKN5JTLedIJNmie4UpjLdt8ZK4q8MHa9DOCty9LaajtwQqWzabIMMLl6JUHS6Ux8GZe9xolYIdCVgyjQ2imRab9rOzskJPTfR+6/96QK+oNvM+b9VDVwhsvPhANb7Dgh7vqq8ZS5/xW725X0JNLnI4ckk+WuQVzKECLWKA9chGddd8dGvUHEsnK8zeSCTQe+lw4ATuYxcEwGo+vkgsKgfJG0KeSRtxOFfkW8woLjtITNa6OWJNKWUXn1jSm1yjwAEaFT9cmyNFUvdlHD42OqWnTjFR3mrD+vH2cfhJRRYMmdRkChS+lOR16E4CAQJSg18Fr8GQ9xy3PIlfj/DCjHbS3bCdU0VOrVaGhYt/446CFB0LdKcJKoFCuYY4CL4GMC0GDN9V2Fc/inAXa67AaEmKHSC39xu2rRf7/WOZXJTZPL2r8qoSjCVIy7cO8Zf1iKUcnj5OOssqFHRaoBHnEPAw4Wy+VNASJq3gpDFPFc+LbSuRBHalobNaiW5A5NM3l4OEZgNM+2WUpTBB6Ric/MhtLfFiNYRs85k+yCbReEgyby9Q== kimnguyen@Kims-MBP.new.rr.com
+  - name: peter
+    fullname: Peter Hull
+    id: 12556
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDcwHsgxiKzH+21Z6oG+1asdPfOros7uPwidGxfZmhnaoUfn5vVlfIlV20KPrhOC3iW+9TyqbW3RFsB73WjBvMJQsPustX/xEjz6PSssu0KRd+T7t2leMOqkaIW/fTWRlEHFzSnMKpj//+tv+2Wi84LKtaCS7eXnlBYCC/fElsq13ui2mQcHG1kxVtfB67MmKkdaPMfEzBxbjx0BfUuhJvEEEZhdmPb/jbbMYgnt8vllNiXPcn6P41p+xsiE4HGiqLi7yCC2TZtJPof0ClWhTMH9U8hHWSE2LDVwQ6CDP+7V1To+gEYebuCTEeBDR+9XfinPCPf71yUm76JHt98JqG3UA4/HdsE/kvAC97ezo2w0lo0a8O8NjdZCBwamvU2EIU1B9CNRwR5SexjHhz3MKaRjZZVeIge1Ji583gNCN8uzhpYtFk7V0R1tPcYPVPoFBSeAgR5N6bjRtY1eRjpWEkT8mzkH78P+3AocqLvGJIQaw1ANi0oDdUmQ/Y6+Kw0zXtey5+6qf5fPJzbG9/31INT3Z7i27WG89omr1O/ZjJNupU7GlCOa+0qRz+cfiSNTWRDDxSbp5lw6ZqLMPUOw6KhXhXdT3VoL9Lm9YMDLv28/4n3rDkKwj+Fa/1TSI5N3oEudhOqX8thlwLJVN1/rp3037InKKGvhuwLQjgbdlHs/Q== peter@elm.lan
+  - name: rob
+    fullname: Rob McBroom
+    id: 12456
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzWwjLtEKYrDswKMVlNhThnhWy02oT/sNa2+eskRpml7ElRxBim4cxx6HyJ85xXlHZjd+ibru8nyl2UQxJkzR5Bij5EaB02fngdVehVX+fe0SxoOkZD4nzjL2u7ffAYTDDbZXSJBSVm8aoYGCe1WzYGleKTdtFv+RjndGqs/0OtQfcUSiVN7MbDmtRnlP49U5fx0qyROfTvqBazxN7XeeaLZ7MxxNfD9K16Mnf/omsqFXCWgS0aBorQUBbW9IPI1ZzoiJCatI8fca4QQrQztFf/l5kk5c7I4iCXJOgLa/2xTr7lNU2wB1qi8D7RUAFw75pSqTZl8X8UwVQEE44wxdZ
+  - name: roche
+    fullname: Roche Compaan
+    id: 12457
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDFtNrIJwk8+9sqEajfkpSgB4xnmun4MbCt7RxwhWaWIy30u6cUfTJ4yLhaBG3GR/mcFX4U7Q30aJ3ODaLB8K1XE/dLsOzRYhbffgJyIX/3/TxhIG4Y0wsUJnEsVeOZPlUWqMAQWxjgzer//4U5RQ6cjN4cJqn7O6cDpBDEMsvDBQo38lgc/t+qKovHyKNBzk4wRr7ZFuhndXAKB2Tf6sSqoCXa9W1ptJPR6DZV99y2HpylMXlPEoF3a4/kQBPgb7A0JKD9deJcD8LAQr1Tqb0eLZHszb1ldPnWDoKE07TCz4LCyNfm1J3l6Yee9zgOq2jpCtY/trFuGKu4WmRrbvX35MK6jIxM6TViHW6HPddfSkaDxpnWM6TPcMCJpPCHnZ4y1ltVeuMcNWh3rFw/UZC5Fpr68cY6fAPcpSa2+AbNkx/mwlj5XC1Qh+hEoD15Dd9sK1298/klO1K6bW/6sZcfaETB0fpuAhnd4iRJ0TeNquPSmwqE6Rg3ubiyVBu5xrI2D6+Hkp9vdtCWP+x0ZA0noE5bJ4TyA/5RBSzXpORbrjzmnowyLXELow6mXHmgfh8p+hV51Qif+UgSwnuKPcVlEyfK32EvrChB0NcohfvRjdUOAA7lKSK4dCVWVac07djFYNrQcmQzo35qx1Z0K/dy/3YBtvqwaJxUvBqHQckfUw== roche@SUMDJANGFATE
+  - name: shane
+    fullname: Shane Hathaway
+    id: 13178
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCwshIVzQSODcC+zpV8HaoXG8aVBXfiJo+eeLNLDn8+ysqUHQJmzVkjKqG0UXBftgsrGcZ/4iUVEhk5n086sVwsFD4LebRnCalnq6TBPK9k/yFIxs/TvjsXVYn00bdGSz+uf3XrloAWGm6ODawFqfrTJEwf6HNxD6EzNT+wm8V5aP/IzXmdQa84im2IJxPFTZlwwSBYc5YJJBaEJiwQqeetLztGlqHpajLmNJK3IxLUk4E4O0nyZeITmLn0/HWXgl7gjm5N+4jfsu+DtICx+p8UHn0gauA6m+QDbwzT7uyOywNGLkZFqkiT5QfyGDwaYvTn62lWkZ2zSwhVg3FadImS/PyrbzylbzYWBrgP213kZawMRW0dyzgZmFd07kktHU7J/sag+oOpCKF9xxSni21lPKvVvtnV54qf6Lo73N6UoBbehD+LXKeQpP+TCe4DXc54dyELjUYl5hqlrkM1yABBGhHHjUa+pyO6tJ+Sp7cVEZI9M7r37+YY4atrJs3PS60= shane@raven
