@@ -10,7 +10,7 @@ Requirements
 Installation
 ------------
 `requirements.yml`:
-- src: git+ssh://git@github.com:sixfeetup/ansible-developer-users.git
+- src: git+https://git@github.com/sixfeetup/ansible-developer-users.git
   scm: git
 
 Role Variables
