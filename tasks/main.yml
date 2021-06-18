@@ -1,6 +1,6 @@
 ---
 
-- name: Install sudo package
+- name: install sudo package
   package:
     name: sudo
     state: present
@@ -11,6 +11,11 @@
     line: "#includedir /etc/sudoers.d"
     regexp: "^#includedir /etc/sudoers.d"
     validate: "visudo -cf %s"
+    state: present
+
+- name: install zsh
+  package:
+    name: zsh
     state: present
 
 - name: collect uids
