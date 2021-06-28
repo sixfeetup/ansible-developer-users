@@ -23,9 +23,9 @@
 - name: "setup {{ item.name }} sudoer"
   template:
     src: sudoer.j2
-    dest: "/etc/sudoers.d/{{ item.name }}"
+    dest: "{{ config_prefix }}/sudoers.d/{{ item.name }}"
     owner: root
-    group: root
+    group: "{{ root_group }}"
     mode: 0440
     validate: "visudo -cf %s"
   when: item.sudo_enabled | default(true) | bool      # default to yes but respect no

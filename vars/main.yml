@@ -1,0 +1,4 @@
+---
+
+root_group: "{{ (ansible_distribution == 'FreeBSD') | ternary('wheel','root') }}"
+config_prefix: "{{ (ansible_distribution == 'FreeBSD') | ternary('/usr/local/etc','/etc') }}"

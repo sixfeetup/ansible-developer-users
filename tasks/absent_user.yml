@@ -2,7 +2,7 @@
 
 - name: "remove {{ item.name }} sudoer"
   file:
-    path: "/etc/sudoers.d/{{ item.name }}"
+    path: "{{ config_prefix }}/sudoers.d/{{ item.name }}"
     state: absent
 
 - name: "remove {{ item.name }} user"
