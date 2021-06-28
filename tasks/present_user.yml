@@ -10,7 +10,7 @@
     name: "{{ item.name }}"
     uid: "{{ (item.id | string in uids.stdout_lines) | ternary(omit, item.id) }}"    # avoid occupied uid
     groups: "{{ (item.optional_groups | default(optional_groups)) | intersect(group_names.stdout_lines) | join(',')|default(omit) }}"    # add groups that exist
-    shell: "{{ item.shell|default(shell) }}"     # use default shell if none is set
+    shell: "{{ item.shell|default(which_zsh.stdout) }}"     # use default shell if none is set
 
 - name: "setup {{ item.name }} authorized_keys"
   authorized_key:

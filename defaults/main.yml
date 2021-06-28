@@ -1,7 +1,6 @@
 ---
 additional_users: []
 
-shell: /usr/bin/zsh
 sudo_config: ALL=(ALL) NOPASSWD:ALL
 optional_groups:
   - zope
