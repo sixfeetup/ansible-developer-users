@@ -73,3 +73,8 @@ sfup_users:
     id: 13178
     ssh_auth:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCwshIVzQSODcC+zpV8HaoXG8aVBXfiJo+eeLNLDn8+ysqUHQJmzVkjKqG0UXBftgsrGcZ/4iUVEhk5n086sVwsFD4LebRnCalnq6TBPK9k/yFIxs/TvjsXVYn00bdGSz+uf3XrloAWGm6ODawFqfrTJEwf6HNxD6EzNT+wm8V5aP/IzXmdQa84im2IJxPFTZlwwSBYc5YJJBaEJiwQqeetLztGlqHpajLmNJK3IxLUk4E4O0nyZeITmLn0/HWXgl7gjm5N+4jfsu+DtICx+p8UHn0gauA6m+QDbwzT7uyOywNGLkZFqkiT5QfyGDwaYvTn62lWkZ2zSwhVg3FadImS/PyrbzylbzYWBrgP213kZawMRW0dyzgZmFd07kktHU7J/sag+oOpCKF9xxSni21lPKvVvtnV54qf6Lo73N6UoBbehD+LXKeQpP+TCe4DXc54dyELjUYl5hqlrkM1yABBGhHHjUa+pyO6tJ+Sp7cVEZI9M7r37+YY4atrJs3PS60= shane@raven
+  - name: joel
+    fullname: Joel Comanda
+    id: 13400
+    ssh_auth:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIIdw+UxlzLBGdbE3Xs0leVhsstOzJBgcgEq6PtFbWlH joelcomanda@Joels-MacBook-Pro.local
