@@ -79,3 +79,4 @@ sfup_users:
     id: 13400
     ssh_auth:
       - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIIdw+UxlzLBGdbE3Xs0leVhsstOzJBgcgEq6PtFbWlH joelcomanda@Joels-MacBook-Pro.local
+    state: absent
