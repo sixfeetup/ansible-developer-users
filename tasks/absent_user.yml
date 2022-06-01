@@ -1,17 +1,17 @@
 ---
 
 - name: "remove {{ item.name }} sudoer"
-  file:
+  ansible.builtin.file:
     path: "{{ config_prefix }}/sudoers.d/{{ item.name }}"
     state: absent
 
 - name: "remove {{ item.name }} user"
-  user:
+  ansible.builtin.user:
     name: "{{ item.name }}"
     remove: true
     state: absent
 
 - name: "remove {{ item.name }} group"
-  group:
+  ansible.builtin.group:
     name: "{{ item.name }}"
     state: absent

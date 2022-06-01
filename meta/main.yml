@@ -7,17 +7,17 @@ galaxy_info:
 
   license: MIT
 
-  min_ansible_version: 2.2
+  min_ansible_version: '2.2'
 
   # https://galaxy.ansible.com/api/v1/platforms/
   #
   platforms:
-  - name: FreeBSD
-    versions:
-    - 12.2+
-  - name: Debian
-    versions:
-    - "?"
+    - name: FreeBSD
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
 
   galaxy_tags: []
     # List tags for your role here, one per line. A tag is a keyword that describes

@@ -1,19 +1,19 @@
 ---
 
 - name: "create {{ item.name }} group"
-  group:
+  ansible.builtin.group:
     name: "{{ item.name }}"
     gid: "{{ (item.id | string in gids.stdout_lines) | ternary(omit, item.id) }}"     # avoid occupied gid
 
 - name: "create {{ item.name }} user"
-  user:
+  ansible.builtin.user:
     name: "{{ item.name }}"
     uid: "{{ (item.id | string in uids.stdout_lines) | ternary(omit, item.id) }}"    # avoid occupied uid
     groups: "{{ (item.optional_groups | default(optional_groups)) | intersect(group_names.stdout_lines) | join(',')|default(omit) }}"    # add groups that exist
     shell: "{{ item.shell|default(which_zsh.stdout) }}"     # use default shell if none is set
 
 - name: "setup {{ item.name }} authorized_keys"
-  authorized_key:
+  ansible.builtin.authorized_key:
     key: "{{ ssh_key }}"
     user: "{{ item.name }}"
   loop: "{{ item.ssh_auth }}"
@@ -21,7 +21,7 @@
     loop_var: ssh_key     # for an arbitrary number of ssh keys
 
 - name: "setup {{ item.name }} sudoer"
-  template:
+  ansible.builtin.template:
     src: sudoer.j2
     dest: "{{ config_prefix }}/sudoers.d/{{ item.name }}"
     owner: root
