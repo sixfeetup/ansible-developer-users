@@ -23,6 +23,11 @@ sfup_users:
     id: 12553
     ssh_auth:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGNmhCowKm+cd3ALWHfFxTO5uiFG01xDbEn7ym8p6uat2aqYjG67T3LxCgpOcidUnZftanIFkDmWMA07bTFin4eowQFpaXgxIhnrI9n9T2MKemriP3Dbqc/tSE+9Eiw25P+B3xNSWNx3LRqzhsSoA2fFh+FX0k+fnBxQ5eA8kt4NDYZ/6DTdMcu3HQJUlgNkDyrW5Ce3UxoNTH0luBQwTdOoQWELM54nI6SGrmNVoxVg6vH5TDVuHAfCXLY7ugc39WpgUB3bEd8m3R9X5xIcHWYCnuKt1JP+WmhwtEFeqoEMiN5lWa0ICjQaz3dkHsJ3wlkHQBNT2wtdQRd3dVxfQJ anthony@abosio.com  # noqa 204
+  - name: adam
+    fullname: Adam Atkison
+    id: 11381
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDDV6qBuc2NVqV8iTn9XLFD0VgS1zpKrtNE0ZFkQM/S/ER0lea0Ip1KMAti9u4CwMoMFwyV3M/L2d+cw7WneYO7qtpLBZJbH0dYgR2mhwhd0WOAj2tU52DPhGj/+ZBRyltmCxHg0x4ruZIs2Yh/xssAK6KwpmnWJ7RBhO/XU9W7QbkRzfGIyiSv+fDWp5AdAj50mY3M7FdKoCj0lJIimjzZjsY4Ok2wJ+6+OHrTshkK0y7BtvWuYUtLVXAREN7pt4hlbJajm1FrLmAJfs8/1QM2z3zxFSKbRqRtMRnCXqa7cO1xBvDNzKuA4ipAbx3E0srVI+EGcPzz7c3gB0NlFGJITqkbnmCHIGYf2axbqTQ2fopkXsJZmCd/QiimEfCho5XEdPlylLdFl3sn5NakMJPhrW1YhXfX7upYSCkbN6eD0dn9Hf5kJzkOdmrmLjd0RXcJDUDKy3lujuLZZ/Zyjvx0hawwaPJx7OxaqBG/R7hMyPh57oS4qQeZYviltc2Pc9E= adam@sixfeetup.com  # noqa 204
   - name: caleb
     fullname: Caleb Gosnell
     id: 13174
